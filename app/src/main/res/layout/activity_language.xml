@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutLanguageRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Language / Язык / שפה"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Select Language\nВыберите язык\nבחר שפה"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTimerCountdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="Переход через 5 сек..."
+                    android:textColor="#E53935"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Кнопка 1: English -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEnglish"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="24dp"
+                    android:text="🇬🇧  English"
+                    android:textAllCaps="false"
+                    android:textColor="#0D47A1"
+                    android:textSize="18sp"
+                    app:strokeColor="#0D47A1"
+                    app:strokeWidth="2dp" />
+
+                <!-- Кнопка 2: Hebrew -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnHebrew"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="12dp"
+                    android:text="🇮🇱  עברית (Hebrew)"
+                    android:textAllCaps="false"
+                    android:textColor="#0D47A1"
+                    android:textSize="18sp"
+                    app:strokeColor="#0D47A1"
+                    app:strokeWidth="2dp" />
+
+                <!-- Кнопка 3: Russian -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRussian"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="12dp"
+                    android:text="🇷🇺  Русский (Russian)"
+                    android:textAllCaps="false"
+                    android:textColor="#0D47A1"
+                    android:textSize="18sp"
+                    app:strokeColor="#0D47A1"
+                    app:strokeWidth="2dp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</LinearLayout>
